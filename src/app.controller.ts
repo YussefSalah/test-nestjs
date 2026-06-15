@@ -1,3 +1,8 @@
+/*
+ * AI-Generated Fix
+ * ================
+ * Add a null/undefined check before calling the method on 'obj'. Either initialize 'obj' with a valid object or handle the undefined case gracefully (e.g., return early or throw a more descriptive error). Example fix: `if (!obj) { throw new Error('Object is undefined'); }` or `const obj = { doSomething: () => {} };`
+ */
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
